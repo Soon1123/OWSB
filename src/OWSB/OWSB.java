@@ -17,6 +17,7 @@ public class OWSB {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
         FinanceManagerPanel fmg = new FinanceManagerPanel();
         fmg.setVisible(true);
     }
