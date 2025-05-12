@@ -62,11 +62,14 @@ public class ProcessPaymentPanel extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
+        jPanel1.setBackground(new java.awt.Color(219, 226, 239));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
 
         labelTitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         labelTitle.setText("Process Payment");
 
+        btnProcessPayment.setBackground(new java.awt.Color(63, 114, 175));
+        btnProcessPayment.setForeground(new java.awt.Color(255, 255, 255));
         btnProcessPayment.setText("Process Payment");
         btnProcessPayment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

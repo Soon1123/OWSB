@@ -44,7 +44,7 @@ public class FinancialReportFormat extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(219, 226, 239));
+        jPanel1.setBackground(new java.awt.Color(255, 253, 236));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
@@ -67,8 +67,7 @@ public class FinancialReportFormat extends javax.swing.JDialog {
             }
         });
 
-        btnGenerate.setBackground(new java.awt.Color(63, 114, 175));
-        btnGenerate.setForeground(new java.awt.Color(255, 255, 255));
+        btnGenerate.setBackground(new java.awt.Color(255, 207, 207));
         btnGenerate.setText("Generate");
         btnGenerate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,6 +75,7 @@ public class FinancialReportFormat extends javax.swing.JDialog {
             }
         });
 
+        btnCancel.setBackground(new java.awt.Color(255, 226, 226));
         btnCancel.setText("Cancel");
         btnCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

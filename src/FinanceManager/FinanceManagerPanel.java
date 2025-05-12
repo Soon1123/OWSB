@@ -64,12 +64,12 @@ public class FinanceManagerPanel extends javax.swing.JFrame {
         MainPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         MainPanel.setLayout(new java.awt.BorderLayout());
 
-        maincontentPanel.setBackground(new java.awt.Color(248, 250, 252));
+        maincontentPanel.setBackground(new java.awt.Color(255, 253, 236));
         maincontentPanel.setMaximumSize(new java.awt.Dimension(800, 600));
         maincontentPanel.setMinimumSize(new java.awt.Dimension(800, 600));
         maincontentPanel.setLayout(null);
 
-        sidebarPanel.setBackground(new java.awt.Color(17, 45, 78));
+        sidebarPanel.setBackground(new java.awt.Color(134, 167, 136));
 
         btnManagePurchaseOrder.setText("✅ Manage Purchase Order");
         btnManagePurchaseOrder.setMaximumSize(null);
@@ -170,7 +170,7 @@ public class FinanceManagerPanel extends javax.swing.JFrame {
         maincontentPanel.add(labelRole);
         labelRole.setBounds(250, 130, 110, 20);
 
-        summaryPanel.setBackground(new java.awt.Color(219, 226, 239));
+        summaryPanel.setBackground(new java.awt.Color(255, 226, 226));
 
         labelFinancialSummary.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         labelFinancialSummary.setText("Financial Summary");

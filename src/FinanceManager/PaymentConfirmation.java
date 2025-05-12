@@ -53,6 +53,7 @@ public class PaymentConfirmation extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
 
+        jPanel1.setBackground(new java.awt.Color(219, 226, 239));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
 
         labelTitle.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -60,12 +61,15 @@ public class PaymentConfirmation extends javax.swing.JDialog {
 
         jLabel2.setText("Supplier: ");
 
+        labelSupplier.setBackground(new java.awt.Color(255, 255, 255));
         labelSupplier.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
         jLabel1.setText("Amount:");
 
         labelAmount.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
+        btnConfirm.setBackground(new java.awt.Color(63, 114, 175));
+        btnConfirm.setForeground(new java.awt.Color(255, 255, 255));
         btnConfirm.setText("Confirm Payment");
         btnConfirm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

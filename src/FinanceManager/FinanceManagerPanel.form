@@ -50,7 +50,7 @@
         <Container class="javax.swing.JPanel" name="maincontentPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="fc" green="fa" red="f8" type="rgb"/>
+              <Color blue="ec" green="fd" red="ff" type="rgb"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[800, 600]"/>
@@ -72,7 +72,7 @@
             <Container class="javax.swing.JPanel" name="sidebarPanel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="4e" green="2d" red="11" type="rgb"/>
+                  <Color blue="88" green="a7" red="86" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -215,7 +215,7 @@
             <Container class="javax.swing.JPanel" name="summaryPanel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ef" green="e2" red="db" type="rgb"/>
+                  <Color blue="e2" green="e2" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
