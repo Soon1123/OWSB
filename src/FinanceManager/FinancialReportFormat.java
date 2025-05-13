@@ -144,7 +144,7 @@ public class FinancialReportFormat extends javax.swing.JDialog {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
         this.dispose();
-        FinanceManagerPanel fmg = new FinanceManagerPanel();
+        FinanceManagerPanel fmg = new FinanceManagerPanel("exampleFinanceManager");
         fmg.setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
 

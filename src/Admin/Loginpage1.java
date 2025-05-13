@@ -4,6 +4,7 @@
  */
 package Admin;
 
+import FinanceManager.FinanceManagerPanel;
 import SalesManager.SalesManagerDashboard;
 import java.awt.Color;
 import java.awt.HeadlessException;
@@ -393,7 +394,7 @@ public class Loginpage1 extends javax.swing.JFrame {
                 openPage(inventoryPage);
                 break;
             case "Finance Manager":
-                FinanceManager financePage = new FinanceManager(loggedInIdentifier);
+                FinanceManagerPanel financePage = new FinanceManagerPanel(loggedInIdentifier);
                 openPage(financePage);
                 break;
             default:

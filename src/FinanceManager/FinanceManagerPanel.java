@@ -4,17 +4,32 @@
  */
 package FinanceManager;
 
+import Admin.Loginpage1;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author charl
  */
 public class FinanceManagerPanel extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FinanceManagerPanel
-     */
+    private String employeeID;
+    private String position;
     
-    public FinanceManagerPanel() {
+    
+    public FinanceManagerPanel(String identifier) {
+        String[] parts = identifier.split(":");
+        if (parts.length == 2) {
+            this.employeeID = parts[0];
+            this.position = parts[1];
+        } else {
+            this.employeeID = "Unknown";
+            this.position = "Unknown";
+            System.out.println("Error: LoggedInIdentifier has an unexpected format: [" + identifier + "]");
+        }
+        System.out.println("EmployeeID: " + employeeID);
+        System.out.println("Position: " + position);
         initComponents();
         
         // Dummy summary data
@@ -260,6 +275,24 @@ public class FinanceManagerPanel extends javax.swing.JFrame {
 
     private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
         // TODO add your handling code here:
+         int response = JOptionPane.showConfirmDialog(this, 
+        "Are you sure you want to log out?", 
+        "Logout Confirmation", 
+        JOptionPane.YES_NO_OPTION, 
+        JOptionPane.QUESTION_MESSAGE);
+
+        // Check the user's response
+        if (response == JOptionPane.YES_OPTION) {
+            // Dispose the AdminTest frame
+            this.dispose();
+
+            // Open Loginpage1 frame
+            Loginpage1 loginPage = new Loginpage1();
+            loginPage.setVisible(true);
+            loginPage.pack();
+            loginPage.setLocationRelativeTo(null);
+            loginPage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        }
     }//GEN-LAST:event_btnLogoutActionPerformed
 
     private void btnGenerateReportsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateReportsActionPerformed
