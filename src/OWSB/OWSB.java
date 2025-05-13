@@ -4,7 +4,7 @@
  */
 package OWSB;
 
-import FinanceManager.FinanceManagerPanel;
+import Admin.Loginpage1;
 
 /**
  *
@@ -18,8 +18,7 @@ public class OWSB {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        FinanceManagerPanel fmg = new FinanceManagerPanel();
-        fmg.setVisible(true);
+       new Loginpage1().setVisible(true);
     }
     
 }

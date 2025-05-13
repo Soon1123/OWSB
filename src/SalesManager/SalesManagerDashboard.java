@@ -1,9 +1,25 @@
 package SalesManager;
 
+import Admin.Loginpage1;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 public class SalesManagerDashboard extends javax.swing.JFrame {
 
-
-    public SalesManagerDashboard() {
+    private String employeeID;
+    private String position;
+    
+    public SalesManagerDashboard(String identifier) {
+        String[] parts = identifier.split(":");
+        if (parts.length == 2) {
+            this.employeeID = parts[0];
+            this.position = parts[1];
+        } else {
+            this.employeeID = "Unknown";
+            this.position = "Unknown";
+            System.out.println("Error: LoggedInIdentifier has an unexpected format: [" + identifier + "]");
+        }
+        
         initComponents();   
         // Set layout for jPanel3
         jPanel3.setLayout(new java.awt.BorderLayout());
@@ -239,6 +255,24 @@ public class SalesManagerDashboard extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        int response = JOptionPane.showConfirmDialog(this, 
+        "Are you sure you want to log out?", 
+        "Logout Confirmation", 
+        JOptionPane.YES_NO_OPTION, 
+        JOptionPane.QUESTION_MESSAGE);
+
+        // Check the user's response
+        if (response == JOptionPane.YES_OPTION) {
+            // Dispose the AdminTest frame
+            this.dispose();
+
+            // Open Loginpage1 frame
+            Loginpage1 loginPage = new Loginpage1();
+            loginPage.setVisible(true);
+            loginPage.pack();
+            loginPage.setLocationRelativeTo(null);
+            loginPage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void supplierEntryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_supplierEntryButtonActionPerformed
@@ -296,7 +330,7 @@ public class SalesManagerDashboard extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SalesManagerDashboard().setVisible(true);
+                new SalesManagerDashboard("Unexpected position value: ").setVisible(true);
             }
         });
     }
