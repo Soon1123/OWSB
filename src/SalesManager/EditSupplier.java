@@ -82,6 +82,7 @@ public class EditSupplier extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFocusableWindowState(false);
+        setUndecorated(true);
 
         jPanel2.setBackground(new java.awt.Color(246, 246, 226));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));

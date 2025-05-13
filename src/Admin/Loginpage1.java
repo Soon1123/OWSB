@@ -4,6 +4,8 @@
  */
 package Admin;
 
+import FinanceManager.FinanceManagerPanel;
+import SalesManager.SalesManagerDashboard;
 import java.awt.Color;
 import java.awt.HeadlessException;
 import java.awt.event.FocusListener;
@@ -380,7 +382,7 @@ public class Loginpage1 extends javax.swing.JFrame {
                 openPage(adminTest);
                 break;
             case "Sales Manager":
-                SalesManager salesPage = new SalesManager(loggedInIdentifier);
+                SalesManagerDashboard salesPage = new SalesManagerDashboard(loggedInIdentifier);
                 openPage(salesPage);
                 break;
             case "Purchase Manager":
@@ -392,7 +394,7 @@ public class Loginpage1 extends javax.swing.JFrame {
                 openPage(inventoryPage);
                 break;
             case "Finance Manager":
-                FinanceManager financePage = new FinanceManager(loggedInIdentifier);
+                FinanceManagerPanel financePage = new FinanceManagerPanel(loggedInIdentifier);
                 openPage(financePage);
                 break;
             default:
