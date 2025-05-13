@@ -172,7 +172,7 @@ public class ProcessPaymentPanel extends javax.swing.JFrame {
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        FinanceManagerPanel fmg = new FinanceManagerPanel("exampleEmployeeID:SalesManager");
+        FinanceManagerPanel fmg = new FinanceManagerPanel();
         fmg.setVisible(true);
     }//GEN-LAST:event_btnCancelActionPerformed
 
@@ -210,7 +210,7 @@ public class ProcessPaymentPanel extends javax.swing.JFrame {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
         this.dispose();
-        FinanceManagerPanel fmg = new FinanceManagerPanel("exampleEmployeeID:SalesManager");
+        FinanceManagerPanel fmg = new FinanceManagerPanel();
         fmg.setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
 
