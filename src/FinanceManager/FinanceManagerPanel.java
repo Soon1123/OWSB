@@ -13,8 +13,21 @@ public class FinanceManagerPanel extends javax.swing.JFrame {
     /**
      * Creates new form FinanceManagerPanel
      */
-    
-    public FinanceManagerPanel() {
+    private String employeeID;
+    private String position;
+
+    public FinanceManagerPanel(String identifier) {
+        String[] parts = identifier.split(":");
+        if (parts.length == 2) {
+            this.employeeID = parts[0];
+            this.position = parts[1];
+        } else {
+            this.employeeID = "Unknown";
+            this.position = "Unknown";
+            System.out.println("Error: LoggedInIdentifier has an unexpected format: [" + identifier + "]");
+        }
+        System.out.println("EmployeeID: " + employeeID);
+        System.out.println("Position: " + position);
         initComponents();
         
         // Dummy summary data

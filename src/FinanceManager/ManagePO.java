@@ -263,7 +263,7 @@ public class ManagePO extends javax.swing.JFrame {
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
          this.dispose();
-         FinanceManagerPanel fmg = new FinanceManagerPanel();
+         FinanceManagerPanel fmg = new FinanceManagerPanel("exampleEmployeeID:SalesManager");
          fmg.setVisible(true);
          
     }//GEN-LAST:event_btnBackActionPerformed
@@ -271,7 +271,7 @@ public class ManagePO extends javax.swing.JFrame {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
         this.dispose();
-        FinanceManagerPanel fmg = new FinanceManagerPanel();
+        FinanceManagerPanel fmg = new FinanceManagerPanel("exampleEmployeeID:SalesManager");
         fmg.setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
 
