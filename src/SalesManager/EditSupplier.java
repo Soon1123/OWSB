@@ -1,3 +1,4 @@
+
 package SalesManager;
 
 import java.io.IOException;
@@ -70,16 +71,18 @@ public class EditSupplier extends javax.swing.JFrame {
         supplierNameLabel = new javax.swing.JLabel();
         contactNoLabel = new javax.swing.JLabel();
         clearButton = new javax.swing.JButton();
+        contactNo = new javax.swing.JTextField();
         activeLabel = new javax.swing.JLabel();
+        isActive = new javax.swing.JCheckBox();
         updateButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel40 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         supplierName = new javax.swing.JTextField();
-        contactNo = new javax.swing.JTextField();
-        isActive = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFocusableWindowState(false);
+        setUndecorated(true);
 
         jPanel2.setBackground(new java.awt.Color(246, 246, 226));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -99,8 +102,21 @@ public class EditSupplier extends javax.swing.JFrame {
             }
         });
 
+        contactNo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contactNoActionPerformed(evt);
+            }
+        });
+
         activeLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         activeLabel.setText("Active?");
+
+        isActive.setText("Active");
+        isActive.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                isActiveActionPerformed(evt);
+            }
+        });
 
         updateButton.setBackground(new java.awt.Color(204, 255, 204));
         updateButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -147,7 +163,11 @@ public class EditSupplier extends javax.swing.JFrame {
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
-        isActive.setText("Active");
+        supplierName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                supplierNameActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -163,8 +183,8 @@ public class EditSupplier extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(isActive, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(isActive, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(contactNo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE)
                         .addComponent(supplierName, javax.swing.GroupLayout.Alignment.LEADING)))
                 .addContainerGap(27, Short.MAX_VALUE))
@@ -184,13 +204,13 @@ public class EditSupplier extends javax.swing.JFrame {
                     .addComponent(contactNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(activeLabel)
-                    .addComponent(isActive))
+                    .addComponent(isActive)
+                    .addComponent(activeLabel))
                 .addGap(39, 39, 39)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(updateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -276,12 +296,23 @@ public class EditSupplier extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_updateButtonActionPerformed
 
+    private void isActiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isActiveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_isActiveActionPerformed
+
     private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
         supplierName.setText("");
         contactNo.setText("");
         isActive.setSelected(false);
     }//GEN-LAST:event_clearButtonActionPerformed
 
+    private void supplierNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_supplierNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_supplierNameActionPerformed
+
+    private void contactNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactNoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_contactNoActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
